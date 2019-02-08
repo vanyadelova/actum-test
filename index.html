@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Actum</title>
+</head>
+
+<body>
+    <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                            <a class="navbar-brand" href="#">
+                                    <img src="app-store.svg" width="30" height="30" alt="">
+                                  </a>
+                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                             <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-primary" href="home.html">Home</a></li>
+                                </li>
+                                 <li class="nav-item dropdown">
+                                     <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                       <a class="dropdown-item" href="senate-data.html">Senate</a>
+                                       <a class="dropdown-item" href="house-data.html">House</a>
+                                     </div>
+                                 </li>
+                                 <li class="nav-item dropdown">
+                                     <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pricing</a>
+                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                       <a class="dropdown-item" href="Attendance-senate.html">Senate</a>
+                                       <a class="dropdown-item" href="Attendance-house.html">House</a>
+                                     </div>
+                                 </li>
+                                 <li class="nav-item dropdown">
+                                     <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                       <a class="dropdown-item" href="Party%20Loyalty-senate.html">Senate</a>
+                                       <a class="dropdown-item" href="Party%20Loyalty-house.html">House</a>
+                                     </div>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                 </nav>
+         
+
+            
+            
+                    <form class="needs-validation" novalidate role="form" data-toggle="validator" name="RegForm" class="form-horizontal" id="form_members" role="form">
+                    <legend>Person</legend>
+                    <div class="form-group">
+                        <label for="validationCustom01" name="Name" class="col-sm-2">First Name</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="firstname" id="validationCustom01" placeholder="First Name" required>
+                        </div>
+                        <label for="validationCustom02" class="col-sm-2">Last Name</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="lastname" id="validationCustom02" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender" class="col-sm-2">Gender</label>
+                        <div class="col-sm-4">
+                            <label for="gender" class="radio-inline">
+                            <input type="radio" name="gender" id="gender" value="male" required> Male
+                            </label>
+                            <label for="gender" class="radio-inline">
+                            <input type="radio" name="gender" id="gender" value="female" required> Female
+                            </label>
+                        </div>
+                        <label for="dob" class="col-sm-2">Date of Birth</label>
+                        <div class="col-sm-4">
+                            <input type="date" class="form-control" name="dob" id="dob" placeholder="mm/dd/yyyy" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <label for="region" class="col-sm-2">Number of children</label>
+                            <select class="form-control" id="sel1">
+                              <option>0</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                            </select>
+                          </div>
+                    <legend>Address</legend>
+                    <div class="form-group">
+                        <label for="address" name="Address" class="col-sm-2">Address</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="address" id="address" placeholder="Street + No" required>
+                        </div>
+                        <label for="city" class="col-sm-2">City</label>
+                        <div class="col-sm-4">
+                        <input type="text" class="form-control" list="cities" name="city" id="city" placeholder="City" required>
+                        <datalist id="cities">
+                            <option value="Prague">
+                            <option value="Brno">
+                            <option value="Olomouc">
+                            <option value="Ostrava">
+                            <option value="Karlovy Vary">
+                        </datalist>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipcode" class="col-sm-2">ZIP Code</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="ZIP Code" required>
+                        </div>
+                        <label for="region" class="col-sm-2">Region</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" name="region" id="region" required>
+                                <option>Select a Region</option>
+                                <option>Hlavní město Praha</option>
+                                <option>Středočeský</option>
+                                <option>Jihočeský</option>
+                                <option>Vysočina</option>
+                            </select>
+                        </div>
+                    </div>
+                    <legend>Contact Info</legend>
+                    <div class="form-group">
+                        <label for="phone" name="Telephone" class="col-sm-2">Phone</label>
+                        <div class="col-sm-4">
+                            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
+                        </div>
+                        <label for="email" name="EMail" class="col-sm-2" >Email</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-warning" name="submit" id="submit" onclick="sendData({test:'ok'})">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                    </div>
+
+    </div>
+
+<footer class="bg-dark">
+            <div class="container">
+                <p class="text-center text-white py-3">&copy; 2019 Actum. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
